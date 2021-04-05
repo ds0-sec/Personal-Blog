@@ -3,6 +3,12 @@ body {
     height: 100%;
 }
 
+
+#overall-container {
+    max-width: 1600px;
+    
+}
+
 #socials {
     text-align: center;
 }
@@ -14,6 +20,10 @@ body {
 .social-links:hover {
     color: #F28177;
     text-decoration: none;
+}
+
+#content {
+    background-color: rgb(255, 255, 255);
 }
 
 .publication-list-item {
@@ -304,7 +314,9 @@ body {
 
 
 /* XL DEVICE VIEWPORT */
-@media (min-width: 1200px) {
+@media (max-width: 1600px) and (min-width: 1200px){
+    
+    
     #aside {
         height: 100vh;
         width: 100%;
@@ -333,6 +345,84 @@ body {
     #content {
         overflow: auto;
         height: 100vh;
+    }
+
+    #publications {
+        /* height: 500px; */
+        /* width: 100%; */
+        /* background-color: aquamarine; */
+        /* border: 1px solid salmon;
+        margin: 5%; */
+    }
+
+    .section-title {
+        margin: 50px 0;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        /* text-decoration: underline; */
+    }
+
+    .publication {
+        margin: 35px 0 35px 0;
+    }
+
+    .publication-title {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .publication-link {
+        text-decoration: none;
+        color: #212529;
+    }
+
+    .publication-link:hover {
+        color: #212529;
+        
+    }
+
+    .publication-text {
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+@media (min-width: 1600px){
+    body {
+        background-image: url("/images/background/y-so-serious-white.png");
+        height: 100%;
+    }
+
+        
+    #aside {
+        height: 100vh;
+        width: 100%;
+        /* background-color: blanchedalmond */
+        background-color: rgb(46, 65, 89);
+    }
+
+    #profile-image {
+        height: 275px;
+        width: 275px;
+        margin-top: 75px;
+
+    }
+
+    #header-text {
+        font-size: 24px;
+        font-family: 'Rock Salt', cursive;
+        color: #F28177;
+    }
+
+    
+    #visible-for-lg {
+        display: none;
+    }
+
+    #content {
+        overflow: auto;
+        height: 100vh;
+        border-right: 1px solid rgb(33, 37, 41);
+        border-left: 1px solid rgb(33, 37, 41);
+        
     }
 
     #publications {
